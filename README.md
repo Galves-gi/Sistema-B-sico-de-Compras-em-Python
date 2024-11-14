@@ -4,17 +4,17 @@ Um sistema simples de gerenciamento de compras desenvolvido em Python, com funci
 exclusão e listagem de itens. Este projeto tem como objetivo praticar a manipulação de listas e estruturas básicas de controle de fluxo,
 e futuramente incluirá uma interface gráfica e recursos adicionais.
 
-Funcionalidades
+Funcionalidades:
 O menu com as opções aparecerá no terminal, e você poderá interagir com o sistema.
 (I)nserir: Adiciona um item à lista de compras.
 (A)pagar: Remove um item da lista de compras.
 (L)istar: Exibe todos os itens da lista de compras.
 (S)air: Encerra o sistema.
 
-Instalação
+Instalação:
 Clone o repositório para o seu computador.
 
-Como Usar
+Como Usar:
 Execute o script Python.
 
 Próximos Passos
