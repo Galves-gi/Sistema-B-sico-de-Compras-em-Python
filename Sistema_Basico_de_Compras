@@ -1,0 +1,51 @@
+
+import os
+list = []
+
+print('-------------Supermercado da GiGi------------- \n ')
+
+def lista():
+    print('\nn° |  Produto\n-------------- ')
+    for i,saida in enumerate(list):       
+        print(i,' | ',saida)
+        print('---|-------- ')
+    return lista
+
+while True:
+    print('Escolha uma opção:\n')
+    entrada = input('[i]nserir    [a]pagar    [l]ista     [s]air :   ')
+
+    if entrada == 'i' or entrada == 'I':
+        inserir = input('Insere o nome do produto:  ')
+        list.append(inserir)
+        True 
+        os.system('cls')
+    elif entrada == 'a' or entrada =='A':
+        if len(list) > 0:
+            lista()
+            remover = input("Digite o número do produto: ")
+            if remover.isdecimal():   
+                num_remover = int(remover)   
+                apagar = list.pop(num_remover)
+                os.system('cls') 
+                print('Produto removida.')
+                lista()
+            else:
+                os.system('cls')
+                print('Valor não valido!')
+        else:
+            print('Lista vazia!')
+            True        
+                
+    elif entrada == 'l' or entrada =='L':  
+        lista()
+        True
+    elif entrada == 's' or entrada =='S':
+        os.system('cls')
+        print('Fim da compra!')
+        exit()
+    else:
+        os.system('cls')
+        print('Valor não valido!')
+        True
+   
